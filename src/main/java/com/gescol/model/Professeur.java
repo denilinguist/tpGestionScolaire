@@ -17,11 +17,11 @@ public class Professeur {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	public Integer id;
-	public String nom;
-	public String prenom;
-	public Date dateNaissance;
-	public List<Matiere> matieres;
+	private Integer id;
+	private String nom;
+	private String prenom;
+	private Date dateNaissance;
+	private List<Matiere> matieres;
 	
 	public Professeur() {
 		super();

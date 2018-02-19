@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -11,9 +12,10 @@ import javax.persistence.Table;
 public class Classe {
 
 	@Id
-	public String nom;
-	public int capacite;
-	public List<Matiere> matieresExclues;
+	private String nom;
+	private Integer capacite;
+	@OneToMany(mappedBy="classe")
+	private List<Matiere> matieresExclues;
 	
 	public Classe() {
 		super();

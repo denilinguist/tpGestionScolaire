@@ -1,7 +1,10 @@
 package com.gescol.model;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -9,8 +12,13 @@ import javax.persistence.Table;
 public class Matiere {
 
 	@Id
-	public String nom;
-	public Couleur couleur;
+	private String nom;
+	@Enumerated(EnumType.STRING)
+	private Couleur couleur;
+	
+	@ManyToOne
+	private Classe classe;
+	
 	
 	public Matiere() {
 		super();
