@@ -9,7 +9,7 @@ import javax.persistence.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.music.model.Album;
+import com.gescol.model.Matiere;
 
 @Repository
 @Transactional
