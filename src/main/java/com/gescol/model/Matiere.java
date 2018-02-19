@@ -7,6 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
 @Entity
 @Table
 public class Matiere {
@@ -18,7 +20,6 @@ public class Matiere {
 	
 	@ManyToOne
 	private Classe classe;
-	
 	
 	public Matiere() {
 		super();
