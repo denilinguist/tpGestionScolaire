@@ -13,17 +13,17 @@ public class Classe {
 	@Id
 	public String nom;
 	public int capacite;
-	public List<Matiere> matieres;
+	public List<Matiere> matieresExclues;
 	
 	public Classe() {
 		super();
 	}
 
-	public Classe(String nom, int capacite, List<Matiere> matieres) {
+	public Classe(String nom, int capacite, List<Matiere> matieresExclues) {
 		super();
 		this.nom = nom;
 		this.capacite = capacite;
-		this.matieres = matieres;
+		this.matieresExclues = matieresExclues;
 	}
 
 	public String getNom() {
@@ -42,12 +42,12 @@ public class Classe {
 		this.capacite = capacite;
 	}
 
-	public List<Matiere> getMatieres() {
-		return matieres;
+	public List<Matiere> getMatieresExclues() {
+		return matieresExclues;
 	}
 
-	public void setMatieres(List<Matiere> matieres) {
-		this.matieres = matieres;
+	public void setMatieresExclues(List<Matiere> matieresExclues) {
+		this.matieresExclues = matieresExclues;
 	}
 	
 	

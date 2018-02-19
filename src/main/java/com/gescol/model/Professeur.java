@@ -1,6 +1,9 @@
 package com.gescol.model;
 
-import java.sql.Date;
+
+
+import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,19 +21,19 @@ public class Professeur {
 	public String nom;
 	public String prenom;
 	public Date dateNaissance;
-	public Matiere matiere;
+	public List<Matiere> matieres;
 	
 	public Professeur() {
 		super();
 	}
 
-	public Professeur(Integer id, String nom, String prenom, Date dateNaissance, Matiere matiere) {
+	public Professeur(Integer id, String nom, String prenom, Date dateNaissance, List<Matiere> matieres) {
 		super();
 		this.id = id;
 		this.nom = nom;
 		this.prenom = prenom;
 		this.dateNaissance = dateNaissance;
-		this.matiere = matiere;
+		this.matieres = matieres;
 	}
 
 	public Integer getId() {
@@ -65,12 +68,12 @@ public class Professeur {
 		this.dateNaissance = dateNaissance;
 	}
 
-	public Matiere getMatiere() {
-		return matiere;
+	public List<Matiere> getMatieres() {
+		return matieres;
 	}
 
-	public void setMatiere(Matiere matiere) {
-		this.matiere = matiere;
+	public void setMatieres(List<Matiere> matieres) {
+		this.matieres = matieres;
 	}
 	
 	
