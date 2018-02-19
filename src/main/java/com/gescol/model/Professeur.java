@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -26,6 +27,7 @@ public class Professeur {
 //	@JsonView(Views.Common.class)
 	public Date dateNaissance;
 //	@JsonView(Views.ProfesseurWithMatier.class)
+	@OneToMany(mappedBy="professeur")
 	public List<Matiere> matieres;
 	
 	public Professeur() {

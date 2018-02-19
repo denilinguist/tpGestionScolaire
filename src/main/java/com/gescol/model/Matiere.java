@@ -21,6 +21,9 @@ public class Matiere {
 	@ManyToOne
 	private Classe classe;
 	
+	@ManyToOne
+	private Professeur professeur;
+	
 	public Matiere() {
 		super();
 	}
