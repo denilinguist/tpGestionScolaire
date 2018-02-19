@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.gescol.model.Matiere;
-import com.music.model.Album;
 
 @Repository
 @Transactional

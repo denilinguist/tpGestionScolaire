@@ -9,6 +9,8 @@ import javax.persistence.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.gescol.model.Professeur;
+
 @Repository
 @Transactional
 public class ProfesseurDaoImpl implements ProfesseurDao{
