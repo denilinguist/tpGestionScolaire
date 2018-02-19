@@ -17,10 +17,15 @@ public class Professeur {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+//	@JsonView(Views.Common.class)
 	public Integer id;
+//	@JsonView(Views.Common.class)
 	public String nom;
+//	@JsonView(Views.Common.class)
 	public String prenom;
+//	@JsonView(Views.Common.class)
 	public Date dateNaissance;
+//	@JsonView(Views.ProfesseurWithMatier.class)
 	public List<Matiere> matieres;
 	
 	public Professeur() {

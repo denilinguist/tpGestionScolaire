@@ -4,12 +4,16 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
 @Entity
 @Table
 public class Matiere {
 
 	@Id
+//	@JsonView(Views.Common.class)
 	public String nom;
+//	@JsonView(Views.Common.class)
 	public Couleur couleur;
 	
 	public Matiere() {
